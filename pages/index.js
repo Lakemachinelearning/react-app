@@ -1,15 +1,23 @@
 import Layout from '../components/layout';
+import Link from 'next/link';
 
-export default function Index() {
+const PostLink = props => (
+  <li>
+    <Link href="/p/[id]" as={`/p/${props.id}`}>
+      <a>{props.id}</a>
+    </Link>
+  </li>
+);
+
+export default function Blog() {
   return (
       <Layout>
-          <p>Hello,</p>
-          <p>My name is Bert.</p>
-          <p>I am a Sales enthusiast & Consumer psychology specialist</p>
-          <p>I can help to Optimize your conversion rate online and offline</p>
-          <p>Basically I can help you to get more costumers</p>
-          <p>Want more info? Write me!</p>
-          
+        <h1>Lake Consulting Blog</h1>
+        <ul>
+          <PostLink id="How it all started..."/>
+          <PostLink id="My first five years in Sales"/>
+          <PostLink id="Why salesman learned to write code?"/>
+        </ul>
       </Layout>
   );
 }
