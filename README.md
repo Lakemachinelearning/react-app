@@ -1,12 +1,8 @@
-# I am React app
-Simple React + Redux application
+# I am Next.js app
 
-React uses virtual dom to load the changes in components to DOM
-This makes React.js very fast!
+Next.js is built on top of React.js
 
-React components look like HTML templates (It is actually JSX)
+# WHY NEXT.JS ?
+  + Server-side rendering minimizes the time users spend waiting and ensures your conversion rate does not suffer.
 
-React components consist of:
-  -JSX
-  -State
-  -Javascript
+    Server-side rendering guarantees your pages are easily indexable by search engines and previewable on social media    platforms. Client-side routing solutions can delay web crawling and in turn, tarnish discoverability.
