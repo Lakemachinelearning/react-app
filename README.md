@@ -1,4 +1,4 @@
-# react-app
+# I am React app
 Simple React + Redux application
 
 React uses virtual dom to load the changes in components to DOM
